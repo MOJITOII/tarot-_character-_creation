@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔罗牌-NPC生成器</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="bg-layer"></div>
+        <div id="title-text">用塔罗牌塑造饱满的NPC人物形象</div>
+        <div id="card-deck">
+            <img id="deck-animation" src="/data/background/paidui_0.png" alt="牌堆">
+            <button id="draw-btn">
+                <img src="/data/background/choupai.png" alt="抽牌">
+            </button>
+        </div>
+        <div id="result-area" style="display:none;">
+            <div id="cards-display"></div>
+            <div id="input-area">
+                <label for="background-input">请输入故事背景：</label>
+                <input type="text" id="background-input" placeholder="例如：中世纪、中国古代、宋朝">
+                <button id="submit-bg">生成角色</button>
+            </div>
+            <div id="profile-output" style="display:none;"></div>
+            <div id="feedback-area" style="display:none;">
+                <textarea id="feedback-input" placeholder="输入修改意见（可选）"></textarea>
+                <button id="submit-feedback">重新生成</button>
+                <button id="finish-btn">满意，结束</button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
